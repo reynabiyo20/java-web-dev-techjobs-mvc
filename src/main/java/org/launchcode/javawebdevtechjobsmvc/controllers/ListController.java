@@ -1,5 +1,4 @@
 package org.launchcode.javawebdevtechjobsmvc.controllers;
-
 import org.launchcode.javawebdevtechjobsmvc.models.Job;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +13,8 @@ import java.util.HashMap;
 /**
  * Created by LaunchCode
  */
+
+
 @Controller
 @RequestMapping(value = "list")
 public class ListController {
@@ -28,7 +29,8 @@ public class ListController {
         columnChoices.put("positionType", "Position Type");
         columnChoices.put("coreCompetency", "Skill");
 
-        tableChoices.put("all", "View All");
+
+        tableChoices.put("all", "ViewAll");
         tableChoices.put("employer", JobData.getAllEmployers());
         tableChoices.put("location", JobData.getAllLocations());
         tableChoices.put("positionType", JobData.getAllPositionTypes());
